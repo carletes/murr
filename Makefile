@@ -1,8 +1,9 @@
+ZIPFILE="projectID46c6e62fc15c6_third.zip"
 zip:
-	zip murr.zip murr.txt murr.html images/*
-	unzip -l murr.zip
+	zip $(ZIPFILE) murr.txt murr.html images/*
+	unzip -l $(ZIPFILE)
 
 clean:
-	rm -f murr.zip
+	rm -f *.zip
 
 .PHONY: clean zip
